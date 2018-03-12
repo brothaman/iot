@@ -11,7 +11,6 @@ class MRmyjob(MRJob):
 		yield None, (sum(list_of_values),key)
 
 	def reducer2(self, _, list_of_values):
-		print list(list_of_values)
 		yield max(list_of_values)
 
 	def steps(self):
